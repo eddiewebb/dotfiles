@@ -6,7 +6,7 @@
 
 
 
-dotfiles_dir=~/dotfiles/home   # change this if you checked out repo under different name      
+dotfiles_dir=~/teamdotfiles/home   # change this if you checked out repo under different name      
 backup_dir=~/dotfiles_bak       
 files=$(ls -A ${dotfiles_dir})   
 
