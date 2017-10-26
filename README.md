@@ -1,7 +1,7 @@
-# .dotfiles 
+# Multiple .dotfiles repos
 
 ## What is it?
-This is a branch in the .dotfiles repo project that demostrates how you might support multiple dotfile folders. Script and instructions reflect those updates.
+See [.dotfiles](https://github.com/eddiewebb/dotfiles) for info on the main project, this branch has instructions to support multiple sibling repos and sample alteration to [install.sh](install.sh)
 
 
 ## What's it look like?
