@@ -31,20 +31,19 @@ This project should be cloned into your home directory, you can rename and even 
 
 ## Making this your own
 
-1) Just fork this repo as you would normally, then...
-2) Replace my specific dotfiles with your own, and commit then to your fork
+1) Just fork this repo as you would normally,
+2) Clone the repo into your home directory (by default as ~/dotfiles) 
+2) Start moving or creating ~/dotfiles/home with your own, and commit then to your fork
 ```
 git clone [YOUR repo URL] 
 cd dotfiles
-# remove my files entirely or selectively
-rm -Rf home/* home/.*
 # add your files
 cp -a ~/[.dotFileToTrack] home/
 cp -a ~/[.dotFileToTrackEtc] home/
 # Create symlinks
 bash install.sh
 
-git commit -am"Adding my own files instead of eddies"
+git commit -am"Adding my very own and magical dotfiles"
 git push
 ```
 3)Now use the instructions below moving forward.
@@ -104,3 +103,6 @@ All you need to do is check out the repo as a different name, and modify install
 cd ~
 git clone [ADDITIONAL repo URL] [different repo name]
 ```
+
+
+Have a look at the [`multiple-dotfile-repos`](https://github.com/eddiewebb/dotfiles/tree/multiple-dotfile-repos) branch as an example.
