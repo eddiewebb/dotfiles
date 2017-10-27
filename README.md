@@ -27,7 +27,7 @@ drwxr-xr-x     7 ollitech  wheel      238 Oct 25 10:21 dotfiles  # <- this git r
 ...
 ```
 
-This project should be cloned into your home directory, you can rename and even have multiple versions, just be sure to modify [install.sh](install.sh) accordingly.
+This project should be cloned into your home directory, you can rename and even have multiple versions, and (install.sh)[install.sh] will set symlinks properly based on checked out repo path.
 
 ## Making this your own
 
@@ -97,12 +97,10 @@ drwxr-xr-x     7 ollitech  wheel      238 Oct 25 10:21 teamdotfiles  # <- also t
 
 here "gitprompt" is a file that does some nifty formatting of the bash_prompt, and is sourced from everyone's unique .bash_profile
 
-All you need to do is check out the repo as a different name, and modify install.sh with the path.
+All you need to do is check out the repo as a different name, really that's it. Everything else works the same!
 
 ```
 cd ~
 git clone [ADDITIONAL repo URL] [different repo name]
 ```
 
-
-Have a look at the [`multiple-dotfile-repos`](https://github.com/eddiewebb/dotfiles/tree/multiple-dotfile-repos) branch as an example.
