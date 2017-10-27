@@ -2,11 +2,15 @@
 
 ## What is it?
 Provides an easy way to manage & sync the common files found in a user's home directory `~/` that are lovingly enhanced over years of use and optimization.
+- `scripts` folder
+- bash, git or other common tool config
 
 Useful if you use multiple devices/vms or want to share some common config across teams.
 
+**Because multiple "collections" can live next to each other in harmony you can combine repos for private and shared use cases.**
+
 ## How it is different than [insert other dotfiles refernce]?
-UNlike most dotfile projects:
+Unlike most dotfile projects:
 1) I make no assumptions about *what* files or config you want, I just enable the how.
 2) I allow to repeat this pattern for many collections/folders so you can have some private, and some shared.
 
@@ -21,7 +25,6 @@ drwxr-xr-x+   80 ollitech  staff     2720 Oct 25 13:43 .
 drwxr-xr-x     6 root      admin      204 Jan 23  2016 ..
 lrwxr-xr-x     1 ollitech  staff       43 Oct 25 13:43 .bash_profile -> /Users/ollitech/dotfiles/home/.bash_profile
 lrwxr-xr-x     1 ollitech  staff       40 Oct 25 13:43 .gitconfig -> /Users/ollitech/dotfiles/home/.gitconfig
-lrwxr-xr-x     1 ollitech  staff       33 Oct 25 13:43 .m2 -> /Users/ollitech/dotfiles/home/.m2
 ...
 drwxr-xr-x     7 ollitech  wheel      238 Oct 25 10:21 dotfiles  # <- this git repo
 ...
@@ -88,7 +91,6 @@ drwxr-xr-x     6 root      admin      204 Jan 23  2016 ..
 lrwxr-xr-x     1 ollitech  staff       43 Oct 25 13:43 .bash_profile -> /Users/ollitech/dotfiles/home/.bash_profile
 lrwxr-xr-x     1 ollitech  staff       40 Oct 25 13:43 .gitconfig -> /Users/ollitech/dotfiles/home/.gitconfig
 lrwxr-xr-x     1 ollitech  staff       40 Oct 25 13:43 .gitprompt -> /Users/ollitech/teamdotfiles/home/.gitprompt
-lrwxr-xr-x     1 ollitech  staff       33 Oct 25 13:43 .m2 -> /Users/ollitech/dotfiles/home/.m2
 ...
 drwxr-xr-x     7 ollitech  wheel      238 Oct 25 10:21 dotfiles  # <- this git repo
 drwxr-xr-x     7 ollitech  wheel      238 Oct 25 10:21 teamdotfiles  # <- also this repo, but different files and shared
@@ -103,4 +105,16 @@ All you need to do is check out the repo as a different name, really that's it. 
 cd ~
 git clone [ADDITIONAL repo URL] [different repo name]
 ```
+
+## What about folders like `scripts`
+
+Supports nested/overlapping folders as well.  This allows a user for instance to have both private and shared contents in a `~/scripts/` folder.
+
+```
+LIBP45P-31715DD:dotfiles ollitech$ ls -la ~/scripts/
+lrwxr-xr-x   1 ollitech  staff    51B Oct 27 15:26 ngrok@ -> /Users/ollitech/dotfiles/home/scripts/ngrok
+lrwxr-xr-x   1 ollitech  staff    46B Oct 27 15:26 proxy.sh@ -> /Users/ollitech/teamdotfiles/home/scripts/proxy.sh
+```
+
+
 
