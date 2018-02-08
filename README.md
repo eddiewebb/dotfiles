@@ -34,7 +34,7 @@ drwxr-xr-x     7 ollitech  wheel      238 Oct 25 10:21 dotfiles  # <- this git r
 ...
 ```
 
-This project should be cloned into your home directory, you can rename and even have multiple versions, and (install.sh)[install.sh] will set symlinks properly based on checked out repo path.
+This project should be cloned into your home directory, you can rename and even have multiple versions, and [install.sh](install.sh) will set symlinks properly based on checked out repo path.
 
 ## Making this your own
 
