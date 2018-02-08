@@ -7,7 +7,11 @@ Provides an easy way to manage & sync the common files found in a user's home di
 
 Useful if you use multiple devices/vms or want to share some common config across teams.
 
+
+
 **Because multiple "collections" can live next to each other in harmony you can combine repos for private and shared use cases.**
+
+You can browse eddie's [dotfiles-public](https://github.com/eddiewebb/dotfiles-public) for a working example of his publicly safe files. All his `dotfiles-secret` are safely encrypted in a private [keybase git repo](https://keybase.io/blog/encrypted-git-for-everyone)
 
 ## How it is different than [insert other dotfiles refernce]?
 Unlike most dotfile projects:
